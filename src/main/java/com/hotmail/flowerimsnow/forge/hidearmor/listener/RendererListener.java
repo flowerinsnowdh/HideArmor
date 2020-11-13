@@ -15,6 +15,7 @@ public class RendererListener {
         if (e.entity == mc.thePlayer && HideArmor.hide) {
             for (int i = 36;i < 40;i++) {
                 armors[i - 36] = mc.thePlayer.inventory.getStackInSlot(i);
+                mc.thePlayer.inventory.setInventorySlotContents(i,null);
             }
         }
     }
@@ -24,6 +25,7 @@ public class RendererListener {
         if (e.entity == mc.thePlayer && HideArmor.hide) {
             for (int i = 36;i < 40;i++) {
                 mc.thePlayer.inventory.setInventorySlotContents(i,armors[i - 36]);
+                armors[i - 36] = null;
             }
         }
     }
