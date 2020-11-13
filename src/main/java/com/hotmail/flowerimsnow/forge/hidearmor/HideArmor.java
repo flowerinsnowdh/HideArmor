@@ -1,5 +1,6 @@
 package com.hotmail.flowerimsnow.forge.hidearmor;
 
+import com.hotmail.flowerimsnow.forge.hidearmor.listener.RendererListener;
 import com.hotmail.flowerimsnow.forge.hidearmor.manager.KeyManager;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -15,7 +16,7 @@ public class HideArmor {
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        regListeners(new KeyManager());
+        regListeners(new KeyManager(),new RendererListener());
     }
 
     private void regListeners(Object... objects) {

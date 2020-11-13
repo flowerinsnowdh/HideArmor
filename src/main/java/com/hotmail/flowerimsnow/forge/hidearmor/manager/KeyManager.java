@@ -18,8 +18,8 @@ public class KeyManager {
     public void onKeyInput(InputEvent.KeyInputEvent e) {
         Minecraft mc = Minecraft.getMinecraft();
         if (SWITCH_ARMORS.isPressed()) {
-            if (HideArmor.hide) mc.thePlayer.addChatComponentMessage(new ChatComponentText("hidearmor.hide"));
-            else mc.thePlayer.addChatComponentMessage(new ChatComponentText("hidearmor.show"));
+            if (HideArmor.hide) mc.thePlayer.addChatComponentMessage(new ChatComponentText("hidearmor.show"));
+            else mc.thePlayer.addChatComponentMessage(new ChatComponentText("hidearmor.hide"));
             HideArmor.hide = !HideArmor.hide;
         }
     }
