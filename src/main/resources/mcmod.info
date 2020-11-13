@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hidearmor",
+  "name": "HideArmor",
+  "description": "隐藏自己的护甲",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/flowerinsnowdh/HideArmor",
+  "updateUrl": "",
+  "authorList": ["flowerinsnow"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
