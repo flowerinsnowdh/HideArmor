@@ -12,7 +12,7 @@ public class HideArmor {
     public static HideArmor instance;
     public static final String MODID = "hidearmor";
     public static final String VERSION = "1.0";
-    public static boolean hide;
+    public static boolean hide = true;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
